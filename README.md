@@ -30,3 +30,36 @@ InternHub AI is a simple backend API that evaluates how well a student profile m
   },
   "internship_description": "Internship JD text"
 }
+
+## 📌 Sample API Response
+
+```json
+{
+  "match_summary": "The student matches key skills required for the internship.",
+  "skill_gaps": ["machine learning", "statistics"],
+  "confidence_score": 16,
+  "recommendations": "Strengthen the missing skills to improve internship alignment.",
+  "resume": "Rahul Sharma\nEducation: B.Tech CSE\nSkills: Python, SQL, Pandas"
+}
+
+🚀 How to Run Locally
+Start the FastAPI development server:
+uvicorn app.main:app --reload
+Open your browser and navigate to:
+http://127.0.0.1:8000/docs
+Use the interactive Swagger UI to test the APIs.
+
+👤 Candidate Details 
+Name: MUKUL KUMAR
+Enrollment: E22CSEU1118
+Batch: 2026
+University: Bennett University
+Role Applied For: AI Developer
+
+📊 Output Explanation
+
+match_summary – High-level summary of how well the candidate matches the role
+skill_gaps – Missing or weak skills required for the internship
+confidence_score – Numerical score representing overall alignment
+recommendations – Suggestions to improve internship suitability
+resume – Parsed resume content used for analysis
