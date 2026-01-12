@@ -84,3 +84,13 @@ def analyze(data: InternshipInput):
         data.student,
         data.internship_description
     )
+
+@app.get("/")
+def root():
+    return {
+        "message": "InternHub AI API is running",
+        "docs": "/docs"
+    }
+
+
+
